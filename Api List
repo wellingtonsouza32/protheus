@@ -32760,15 +32760,15 @@ paths:
           description: Not found
         '500':
           description: Internal server error
-  /api/v1/smartapiteste/{AssinanteProcesso}:
+  /api/v1/smartapiteste/{assinanteprocesso}:
     post:
       summary: No description available
       description: No description available
       parameters:
-        - name: AssinanteProcesso
+        - name: assinanteprocesso
           in: path
           required: true
-          description: AssinanteProcesso parameter
+          description: assinanteprocesso parameter
           schema:
             type: string
       responses:
