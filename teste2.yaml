@@ -1,0 +1,2533 @@
+{
+  "openapi": "3.0.0",
+  "info": {
+    "title": "TOTVS - RESTFul API - Combined Services",
+    "description": "Combined API documentation for TOTVS services",
+    "version": "1.0.0"
+  },
+  "servers": [
+    {
+      "url": "{baseUrl}",
+      "variables": {
+        "baseUrl": {
+          "default": "https://api.totvs.com.br"
+        }
+      }
+    }
+  ],
+  "tags": [
+    {
+      "name": "acdmob",
+      "description": "Endpoints for acdmob service"
+    },
+    {
+      "name": "agra030api",
+      "description": "Endpoints for agra030api service"
+    },
+    {
+      "name": "agra601api",
+      "description": "Endpoints for agra601api service"
+    },
+    {
+      "name": "agra608api",
+      "description": "Endpoints for agra608api service"
+    },
+    {
+      "name": "agra611api",
+      "description": "Endpoints for agra611api service"
+    },
+    {
+      "name": "benefaction",
+      "description": "Endpoints for benefaction service"
+    },
+    {
+      "name": "checkings",
+      "description": "Endpoints for checkings service"
+    },
+    {
+      "name": "comd010",
+      "description": "Endpoints for comd010 service"
+    },
+    {
+      "name": "comd020",
+      "description": "Endpoints for comd020 service"
+    },
+    {
+      "name": "comd030",
+      "description": "Endpoints for comd030 service"
+    },
+    {
+      "name": "comd040",
+      "description": "Endpoints for comd040 service"
+    },
+    {
+      "name": "fsmapi",
+      "description": "Endpoints for fsmapi service"
+    },
+    {
+      "name": "gtpforms",
+      "description": "Endpoints for gtpforms service"
+    },
+    {
+      "name": "gtpgeneratetitles",
+      "description": "Endpoints for gtpgeneratetitles service"
+    },
+    {
+      "name": "gtpmonitriip",
+      "description": "Endpoints for gtpmonitriip service"
+    },
+    {
+      "name": "gtprequest",
+      "description": "Endpoints for gtprequest service"
+    },
+    {
+      "name": "gtptickets",
+      "description": "Endpoints for gtptickets service"
+    },
+    {
+      "name": "home",
+      "description": "Endpoints for home service"
+    },
+    {
+      "name": "jurauditoria",
+      "description": "Endpoints for jurauditoria service"
+    },
+    {
+      "name": "jurconsultas",
+      "description": "Endpoints for jurconsultas service"
+    },
+    {
+      "name": "jurcontencioso",
+      "description": "Endpoints for jurcontencioso service"
+    },
+    {
+      "name": "jurcontratos",
+      "description": "Endpoints for jurcontratos service"
+    },
+    {
+      "name": "jurdeeplegal",
+      "description": "Endpoints for jurdeeplegal service"
+    },
+    {
+      "name": "jurfluigrest",
+      "description": "Endpoints for jurfluigrest service"
+    },
+    {
+      "name": "jurfwrest",
+      "description": "Endpoints for jurfwrest service"
+    },
+    {
+      "name": "jurlegalprocess",
+      "description": "Endpoints for jurlegalprocess service"
+    },
+    {
+      "name": "jurmarcas",
+      "description": "Endpoints for jurmarcas service"
+    },
+    {
+      "name": "jurnip",
+      "description": "Endpoints for jurnip service"
+    },
+    {
+      "name": "jurocorrencia",
+      "description": "Endpoints for jurocorrencia service"
+    },
+    {
+      "name": "jurrestcp",
+      "description": "Endpoints for jurrestcp service"
+    },
+    {
+      "name": "jurrestfun",
+      "description": "Endpoints for jurrestfun service"
+    },
+    {
+      "name": "jurrestricoes",
+      "description": "Endpoints for jurrestricoes service"
+    },
+    {
+      "name": "jursocietario",
+      "description": "Endpoints for jursocietario service"
+    },
+    {
+      "name": "jurutil",
+      "description": "Endpoints for jurutil service"
+    },
+    {
+      "name": "mata682api",
+      "description": "Endpoints for mata682api service"
+    },
+    {
+      "name": "mesaoperacional",
+      "description": "Endpoints for mesaoperacional service"
+    },
+    {
+      "name": "meutecnico",
+      "description": "Endpoints for meutecnico service"
+    },
+    {
+      "name": "modcard",
+      "description": "Endpoints for modcard service"
+    },
+    {
+      "name": "modchart",
+      "description": "Endpoints for modchart service"
+    },
+    {
+      "name": "oga010api",
+      "description": "Endpoints for oga010api service"
+    },
+    {
+      "name": "oga250api",
+      "description": "Endpoints for oga250api service"
+    },
+    {
+      "name": "paymentcondition",
+      "description": "Endpoints for paymentcondition service"
+    },
+    {
+      "name": "portalprestador",
+      "description": "Endpoints for portalprestador service"
+    },
+    {
+      "name": "salescharge",
+      "description": "Endpoints for salescharge service"
+    },
+    {
+      "name": "sfca003api",
+      "description": "Endpoints for sfca003api service"
+    },
+    {
+      "name": "sfca004api",
+      "description": "Endpoints for sfca004api service"
+    },
+    {
+      "name": "sfca006api",
+      "description": "Endpoints for sfca006api service"
+    },
+    {
+      "name": "sfca311api",
+      "description": "Endpoints for sfca311api service"
+    },
+    {
+      "name": "supervisorgs",
+      "description": "Endpoints for supervisorgs service"
+    },
+    {
+      "name": "tafesocialremovecompany",
+      "description": "Endpoints for tafesocialremovecompany service"
+    },
+    {
+      "name": "tafsetup",
+      "description": "Endpoints for tafsetup service"
+    },
+    {
+      "name": "tecnps",
+      "description": "Endpoints for tecnps service"
+    },
+    {
+      "name": "tecwsaloc",
+      "description": "Endpoints for tecwsaloc service"
+    },
+    {
+      "name": "tecwstroc",
+      "description": "Endpoints for tecwstroc service"
+    },
+    {
+      "name": "tmscard001",
+      "description": "Endpoints for tmscard001 service"
+    },
+    {
+      "name": "tmscard002",
+      "description": "Endpoints for tmscard002 service"
+    },
+    {
+      "name": "tmscard003",
+      "description": "Endpoints for tmscard003 service"
+    },
+    {
+      "name": "tmscard004",
+      "description": "Endpoints for tmscard004 service"
+    },
+    {
+      "name": "tmscard005",
+      "description": "Endpoints for tmscard005 service"
+    },
+    {
+      "name": "tmscard006",
+      "description": "Endpoints for tmscard006 service"
+    },
+    {
+      "name": "tmschart001",
+      "description": "Endpoints for tmschart001 service"
+    },
+    {
+      "name": "tmschart002",
+      "description": "Endpoints for tmschart002 service"
+    },
+    {
+      "name": "tmschart003",
+      "description": "Endpoints for tmschart003 service"
+    },
+    {
+      "name": "tmschart004",
+      "description": "Endpoints for tmschart004 service"
+    },
+    {
+      "name": "tmschart005",
+      "description": "Endpoints for tmschart005 service"
+    },
+    {
+      "name": "tmschart006",
+      "description": "Endpoints for tmschart006 service"
+    },
+    {
+      "name": "tmschart007",
+      "description": "Endpoints for tmschart007 service"
+    },
+    {
+      "name": "tmschart008",
+      "description": "Endpoints for tmschart008 service"
+    },
+    {
+      "name": "totalinputdocument",
+      "description": "Endpoints for totalinputdocument service"
+    },
+    {
+      "name": "totaloutputdocument",
+      "description": "Endpoints for totaloutputdocument service"
+    },
+    {
+      "name": "totalsales",
+      "description": "Endpoints for totalsales service"
+    },
+    {
+      "name": "ubaa010api",
+      "description": "Endpoints for ubaa010api service"
+    },
+    {
+      "name": "ubaa020api",
+      "description": "Endpoints for ubaa020api service"
+    },
+    {
+      "name": "ubaa040api",
+      "description": "Endpoints for ubaa040api service"
+    },
+    {
+      "name": "ubaa050api",
+      "description": "Endpoints for ubaa050api service"
+    },
+    {
+      "name": "ubaa110api",
+      "description": "Endpoints for ubaa110api service"
+    },
+    {
+      "name": "ubaa120api",
+      "description": "Endpoints for ubaa120api service"
+    },
+    {
+      "name": "ubaw01",
+      "description": "Endpoints for ubaw01 service"
+    },
+    {
+      "name": "ubaw02",
+      "description": "Endpoints for ubaw02 service"
+    },
+    {
+      "name": "ubaw03",
+      "description": "Endpoints for ubaw03 service"
+    },
+    {
+      "name": "ubaw04",
+      "description": "Endpoints for ubaw04 service"
+    },
+    {
+      "name": "ubaw05",
+      "description": "Endpoints for ubaw05 service"
+    },
+    {
+      "name": "ubaw06",
+      "description": "Endpoints for ubaw06 service"
+    },
+    {
+      "name": "ubaw07",
+      "description": "Endpoints for ubaw07 service"
+    },
+    {
+      "name": "ubaw08",
+      "description": "Endpoints for ubaw08 service"
+    },
+    {
+      "name": "ubaw09",
+      "description": "Endpoints for ubaw09 service"
+    },
+    {
+      "name": "ubaw09api",
+      "description": "Endpoints for ubaw09api service"
+    },
+    {
+      "name": "ubaw10",
+      "description": "Endpoints for ubaw10 service"
+    },
+    {
+      "name": "ubaw10api",
+      "description": "Endpoints for ubaw10api service"
+    },
+    {
+      "name": "ubaw12",
+      "description": "Endpoints for ubaw12 service"
+    },
+    {
+      "name": "ubaw13",
+      "description": "Endpoints for ubaw13 service"
+    },
+    {
+      "name": "ubaw14",
+      "description": "Endpoints for ubaw14 service"
+    },
+    {
+      "name": "ubaw15",
+      "description": "Endpoints for ubaw15 service"
+    },
+    {
+      "name": "ubaw150",
+      "description": "Endpoints for ubaw150 service"
+    },
+    {
+      "name": "ubaw16",
+      "description": "Endpoints for ubaw16 service"
+    },
+    {
+      "name": "ubaw17",
+      "description": "Endpoints for ubaw17 service"
+    },
+    {
+      "name": "ubaw18",
+      "description": "Endpoints for ubaw18 service"
+    },
+    {
+      "name": "ubaw19",
+      "description": "Endpoints for ubaw19 service"
+    },
+    {
+      "name": "wsgtpnps",
+      "description": "Endpoints for wsgtpnps service"
+    },
+    {
+      "name": "wsjurgenerico",
+      "description": "Endpoints for wsjurgenerico service"
+    },
+    {
+      "name": "wspfsaltlote",
+      "description": "Endpoints for wspfsaltlote service"
+    },
+    {
+      "name": "wspfsappcp",
+      "description": "Endpoints for wspfsappcp service"
+    },
+    {
+      "name": "wspfsappjuncao",
+      "description": "Endpoints for wspfsappjuncao service"
+    },
+    {
+      "name": "wspfsmet",
+      "description": "Endpoints for wspfsmet service"
+    },
+    {
+      "name": "wspfsparticipante",
+      "description": "Endpoints for wspfsparticipante service"
+    },
+    {
+      "name": "wspfstimesheets",
+      "description": "Endpoints for wspfstimesheets service"
+    },
+    {
+      "name": "wstaf001",
+      "description": "Endpoints for wstaf001 service"
+    },
+    {
+      "name": "wstafgetxml",
+      "description": "Endpoints for wstafgetxml service"
+    },
+    {
+      "name": "wstafst2",
+      "description": "Endpoints for wstafst2 service"
+    },
+    {
+      "name": "wstssauth",
+      "description": "Endpoints for wstssauth service"
+    }
+  ],
+  "paths": {
+    "/CHECKINGS/{SearchKey, Status, Page, PageSize}": {
+      "get": {
+        "tags": [
+          "acdmob"
+        ],
+        "summary": "No description available",
+        "description": "No description available",
+        "parameters": [
+          {
+            "name": "SearchKey, Status, Page, PageSize",
+            "in": "path",
+            "required": true,
+            "description": "SearchKey, Status, Page, PageSize parameter",
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "object"
+                }
+              }
+            }
+          },
+          "400": {
+            "description": "Bad request"
+          },
+          "401": {
+            "description": "Unauthorized"
+          },
+          "404": {
+            "description": "Not found"
+          },
+          "500": {
+            "description": "Internal server error"
+          }
+        }
+      }
+    },
+    "/address/{SearchKey, Status, Page, PageSize}": {
+      "get": {
+        "tags": [
+          "acdmob"
+        ],
+        "summary": "No description available",
+        "description": "No description available",
+        "parameters": [
+          {
+            "name": "SearchKey, Status, Page, PageSize",
+            "in": "path",
+            "required": true,
+            "description": "SearchKey, Status, Page, PageSize parameter",
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "object"
+                }
+              }
+            }
+          },
+          "400": {
+            "description": "Bad request"
+          },
+          "401": {
+            "description": "Unauthorized"
+          },
+          "404": {
+            "description": "Not found"
+          },
+          "500": {
+            "description": "Internal server error"
+          }
+        }
+      }
+    },
+    "/CHECKINGS/{Code}": {
+      "get": {
+        "tags": [
+          "acdmob"
+        ],
+        "summary": "No description available",
+        "description": "No description available",
+        "parameters": [
+          {
+            "name": "Code",
+            "in": "path",
+            "required": true,
+            "description": "Code parameter",
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "object"
+                }
+              }
+            }
+          },
+          "400": {
+            "description": "Bad request"
+          },
+          "401": {
+            "description": "Unauthorized"
+          },
+          "404": {
+            "description": "Not found"
+          },
+          "500": {
+            "description": "Internal server error"
+          }
+        }
+      },
+      "put": {
+        "tags": [
+          "acdmob"
+        ],
+        "summary": "No description available",
+        "description": "No description available",
+        "parameters": [
+          {
+            "name": "Code",
+            "in": "path",
+            "required": true,
+            "description": "Code parameter",
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "object"
+                }
+              }
+            }
+          },
+          "400": {
+            "description": "Bad request"
+          },
+          "401": {
+            "description": "Unauthorized"
+          },
+          "404": {
+            "description": "Not found"
+          },
+          "500": {
+            "description": "Internal server error"
+          }
+        },
+        "requestBody": {
+          "description": "Request body",
+          "required": true,
+          "content": {
+            "application/json": {
+              "schema": {
+                "type": "object"
+              }
+            }
+          }
+        }
+      }
+    },
+    "/inventories/{Code}": {
+      "get": {
+        "tags": [
+          "acdmob"
+        ],
+        "summary": "No description available",
+        "description": "No description available",
+        "parameters": [
+          {
+            "name": "Code",
+            "in": "path",
+            "required": true,
+            "description": "Code parameter",
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "object"
+                }
+              }
+            }
+          },
+          "400": {
+            "description": "Bad request"
+          },
+          "401": {
+            "description": "Unauthorized"
+          },
+          "404": {
+            "description": "Not found"
+          },
+          "500": {
+            "description": "Internal server error"
+          }
+        }
+      },
+      "put": {
+        "tags": [
+          "acdmob"
+        ],
+        "summary": "No description available",
+        "description": "No description available",
+        "parameters": [
+          {
+            "name": "Code",
+            "in": "path",
+            "required": true,
+            "description": "Code parameter",
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "object"
+                }
+              }
+            }
+          },
+          "400": {
+            "description": "Bad request"
+          },
+          "401": {
+            "description": "Unauthorized"
+          },
+          "404": {
+            "description": "Not found"
+          },
+          "500": {
+            "description": "Internal server error"
+          }
+        },
+        "requestBody": {
+          "description": "Request body",
+          "required": true,
+          "content": {
+            "application/json": {
+              "schema": {
+                "type": "object"
+              }
+            }
+          }
+        }
+      }
+    },
+    "/docToAddr/{SearchKey, Page, PageSize}": {
+      "get": {
+        "tags": [
+          "acdmob"
+        ],
+        "summary": "No description available",
+        "description": "No description available",
+        "parameters": [
+          {
+            "name": "SearchKey, Page, PageSize",
+            "in": "path",
+            "required": true,
+            "description": "SearchKey, Page, PageSize parameter",
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "object"
+                }
+              }
+            }
+          },
+          "400": {
+            "description": "Bad request"
+          },
+          "401": {
+            "description": "Unauthorized"
+          },
+          "404": {
+            "description": "Not found"
+          },
+          "500": {
+            "description": "Internal server error"
+          }
+        }
+      }
+    },
+    "/inventories/{SearchKey, Status, Page, PageSize}": {
+      "get": {
+        "tags": [
+          "acdmob"
+        ],
+        "summary": "No description available",
+        "description": "No description available",
+        "parameters": [
+          {
+            "name": "SearchKey, Status, Page, PageSize",
+            "in": "path",
+            "required": true,
+            "description": "SearchKey, Status, Page, PageSize parameter",
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "object"
+                }
+              }
+            }
+          },
+          "400": {
+            "description": "Bad request"
+          },
+          "401": {
+            "description": "Unauthorized"
+          },
+          "404": {
+            "description": "Not found"
+          },
+          "500": {
+            "description": "Internal server error"
+          }
+        }
+      }
+    },
+    "/products/{SearchKey, Status, Page, PageSize, productId, supplier, store}": {
+      "get": {
+        "tags": [
+          "acdmob"
+        ],
+        "summary": "No description available",
+        "description": "No description available",
+        "parameters": [
+          {
+            "name": "SearchKey, Status, Page, PageSize, productId, supplier, store",
+            "in": "path",
+            "required": true,
+            "description": "SearchKey, Status, Page, PageSize, productId, supplier, store parameter",
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "object"
+                }
+              }
+            }
+          },
+          "400": {
+            "description": "Bad request"
+          },
+          "401": {
+            "description": "Unauthorized"
+          },
+          "404": {
+            "description": "Not found"
+          },
+          "500": {
+            "description": "Internal server error"
+          }
+        }
+      }
+    },
+    "/separations/{SearchKey, Status, Page, PageSize, statusOs}": {
+      "get": {
+        "tags": [
+          "acdmob"
+        ],
+        "summary": "No description available",
+        "description": "No description available",
+        "parameters": [
+          {
+            "name": "SearchKey, Status, Page, PageSize, statusOs",
+            "in": "path",
+            "required": true,
+            "description": "SearchKey, Status, Page, PageSize, statusOs parameter",
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "object"
+                }
+              }
+            }
+          },
+          "400": {
+            "description": "Bad request"
+          },
+          "401": {
+            "description": "Unauthorized"
+          },
+          "404": {
+            "description": "Not found"
+          },
+          "500": {
+            "description": "Internal server error"
+          }
+        }
+      }
+    },
+    "/toAddressDetail/{SearchKey, Page, PageSize, Sku, Warehouse, Document, Serie, Sequence, Supplier, Store}": {
+      "get": {
+        "tags": [
+          "acdmob"
+        ],
+        "summary": "No description available",
+        "description": "No description available",
+        "parameters": [
+          {
+            "name": "SearchKey, Page, PageSize, Sku, Warehouse, Document, Serie, Sequence, Supplier, Store",
+            "in": "path",
+            "required": true,
+            "description": "SearchKey, Page, PageSize, Sku, Warehouse, Document, Serie, Sequence, Supplier, Store parameter",
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "object"
+                }
+              }
+            }
+          },
+          "400": {
+            "description": "Bad request"
+          },
+          "401": {
+            "description": "Unauthorized"
+          },
+          "404": {
+            "description": "Not found"
+          },
+          "500": {
+            "description": "Internal server error"
+          }
+        }
+      }
+    },
+    "/warehouse/{SearchKey, Status, Page, PageSize}": {
+      "get": {
+        "tags": [
+          "acdmob"
+        ],
+        "summary": "No description available",
+        "description": "No description available",
+        "parameters": [
+          {
+            "name": "SearchKey, Status, Page, PageSize",
+            "in": "path",
+            "required": true,
+            "description": "SearchKey, Status, Page, PageSize parameter",
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "object"
+                }
+              }
+            }
+          },
+          "400": {
+            "description": "Bad request"
+          },
+          "401": {
+            "description": "Unauthorized"
+          },
+          "404": {
+            "description": "Not found"
+          },
+          "500": {
+            "description": "Internal server error"
+          }
+        }
+      }
+    },
+    "/toAddress": {
+      "post": {
+        "tags": [
+          "acdmob"
+        ],
+        "summary": "No description available",
+        "description": "No description available",
+        "parameters": [],
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "object"
+                }
+              }
+            }
+          },
+          "400": {
+            "description": "Bad request"
+          },
+          "401": {
+            "description": "Unauthorized"
+          },
+          "404": {
+            "description": "Not found"
+          },
+          "500": {
+            "description": "Internal server error"
+          }
+        },
+        "requestBody": {
+          "description": "Request body",
+          "required": true,
+          "content": {
+            "application/json": {
+              "schema": {
+                "type": "object"
+              }
+            }
+          }
+        }
+      }
+    },
+    "/transfer": {
+      "post": {
+        "tags": [
+          "acdmob"
+        ],
+        "summary": "No description available",
+        "description": "No description available",
+        "parameters": [],
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "object"
+                }
+              }
+            }
+          },
+          "400": {
+            "description": "Bad request"
+          },
+          "401": {
+            "description": "Unauthorized"
+          },
+          "404": {
+            "description": "Not found"
+          },
+          "500": {
+            "description": "Internal server error"
+          }
+        },
+        "requestBody": {
+          "description": "Request body",
+          "required": true,
+          "content": {
+            "application/json": {
+              "schema": {
+                "type": "object"
+              }
+            }
+          }
+        }
+      }
+    },
+    "/SEPARATIONS/{Code}": {
+      "put": {
+        "tags": [
+          "acdmob"
+        ],
+        "summary": "No description available",
+        "description": "No description available",
+        "parameters": [
+          {
+            "name": "Code",
+            "in": "path",
+            "required": true,
+            "description": "Code parameter",
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "object"
+                }
+              }
+            }
+          },
+          "400": {
+            "description": "Bad request"
+          },
+          "401": {
+            "description": "Unauthorized"
+          },
+          "404": {
+            "description": "Not found"
+          },
+          "500": {
+            "description": "Internal server error"
+          }
+        },
+        "requestBody": {
+          "description": "Request body",
+          "required": true,
+          "content": {
+            "application/json": {
+              "schema": {
+                "type": "object"
+              }
+            }
+          }
+        }
+      }
+    },
+    "/": {
+      "delete": {
+        "tags": [
+          "agra611api"
+        ],
+        "summary": "No description available",
+        "description": "No description available",
+        "parameters": [],
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "object"
+                }
+              }
+            }
+          },
+          "400": {
+            "description": "Bad request"
+          },
+          "401": {
+            "description": "Unauthorized"
+          },
+          "404": {
+            "description": "Not found"
+          },
+          "500": {
+            "description": "Internal server error"
+          }
+        }
+      },
+      "get": {
+        "tags": [
+          "agra611api"
+        ],
+        "summary": "No description available",
+        "description": "No description available",
+        "parameters": [],
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "object"
+                }
+              }
+            }
+          },
+          "400": {
+            "description": "Bad request"
+          },
+          "401": {
+            "description": "Unauthorized"
+          },
+          "404": {
+            "description": "Not found"
+          },
+          "500": {
+            "description": "Internal server error"
+          }
+        }
+      },
+      "post": {
+        "tags": [
+          "agra611api"
+        ],
+        "summary": "No description available",
+        "description": "No description available",
+        "parameters": [],
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "object"
+                }
+              }
+            }
+          },
+          "400": {
+            "description": "Bad request"
+          },
+          "401": {
+            "description": "Unauthorized"
+          },
+          "404": {
+            "description": "Not found"
+          },
+          "500": {
+            "description": "Internal server error"
+          }
+        },
+        "requestBody": {
+          "description": "Request body",
+          "required": true,
+          "content": {
+            "application/json": {
+              "schema": {
+                "type": "object"
+              }
+            }
+          }
+        }
+      },
+      "put": {
+        "tags": [
+          "agra611api"
+        ],
+        "summary": "No description available",
+        "description": "No description available",
+        "parameters": [],
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "object"
+                }
+              }
+            }
+          },
+          "400": {
+            "description": "Bad request"
+          },
+          "401": {
+            "description": "Unauthorized"
+          },
+          "404": {
+            "description": "Not found"
+          },
+          "500": {
+            "description": "Internal server error"
+          }
+        },
+        "requestBody": {
+          "description": "Request body",
+          "required": true,
+          "content": {
+            "application/json": {
+              "schema": {
+                "type": "object"
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/fat/v1/paymentcondition/{code}{Order, Page, PageSize, Fields}": {
+      "delete": {
+        "tags": [
+          "paymentcondition"
+        ],
+        "summary": "No description available",
+        "description": "No description available",
+        "parameters": [
+          {
+            "name": "code",
+            "in": "path",
+            "required": true,
+            "description": "code parameter",
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "Order, Page, PageSize, Fields",
+            "in": "path",
+            "required": true,
+            "description": "Order, Page, PageSize, Fields parameter",
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "object"
+                }
+              }
+            }
+          },
+          "400": {
+            "description": "Bad request"
+          },
+          "401": {
+            "description": "Unauthorized"
+          },
+          "404": {
+            "description": "Not found"
+          },
+          "500": {
+            "description": "Internal server error"
+          }
+        }
+      },
+      "get": {
+        "tags": [
+          "paymentcondition"
+        ],
+        "summary": "No description available",
+        "description": "No description available",
+        "parameters": [
+          {
+            "name": "code",
+            "in": "path",
+            "required": true,
+            "description": "code parameter",
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "Order, Page, PageSize, Fields",
+            "in": "path",
+            "required": true,
+            "description": "Order, Page, PageSize, Fields parameter",
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "object"
+                }
+              }
+            }
+          },
+          "400": {
+            "description": "Bad request"
+          },
+          "401": {
+            "description": "Unauthorized"
+          },
+          "404": {
+            "description": "Not found"
+          },
+          "500": {
+            "description": "Internal server error"
+          }
+        }
+      },
+      "put": {
+        "tags": [
+          "paymentcondition"
+        ],
+        "summary": "No description available",
+        "description": "No description available",
+        "parameters": [
+          {
+            "name": "code",
+            "in": "path",
+            "required": true,
+            "description": "code parameter",
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "Order, Page, PageSize, Fields",
+            "in": "path",
+            "required": true,
+            "description": "Order, Page, PageSize, Fields parameter",
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "object"
+                }
+              }
+            }
+          },
+          "400": {
+            "description": "Bad request"
+          },
+          "401": {
+            "description": "Unauthorized"
+          },
+          "404": {
+            "description": "Not found"
+          },
+          "500": {
+            "description": "Internal server error"
+          }
+        },
+        "requestBody": {
+          "description": "Request body",
+          "required": true,
+          "content": {
+            "application/json": {
+              "schema": {
+                "type": "object"
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/fat/v1/paymentcondition/{Order, Page, PageSize, Fields}": {
+      "get": {
+        "tags": [
+          "paymentcondition"
+        ],
+        "summary": "No description available",
+        "description": "No description available",
+        "parameters": [
+          {
+            "name": "Order, Page, PageSize, Fields",
+            "in": "path",
+            "required": true,
+            "description": "Order, Page, PageSize, Fields parameter",
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "object"
+                }
+              }
+            }
+          },
+          "400": {
+            "description": "Bad request"
+          },
+          "401": {
+            "description": "Unauthorized"
+          },
+          "404": {
+            "description": "Not found"
+          },
+          "500": {
+            "description": "Internal server error"
+          }
+        }
+      }
+    },
+    "/api/fat/v1/paymentcondition/{Fields}": {
+      "post": {
+        "tags": [
+          "paymentcondition"
+        ],
+        "summary": "No description available",
+        "description": "No description available",
+        "parameters": [
+          {
+            "name": "Fields",
+            "in": "path",
+            "required": true,
+            "description": "Fields parameter",
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "object"
+                }
+              }
+            }
+          },
+          "400": {
+            "description": "Bad request"
+          },
+          "401": {
+            "description": "Unauthorized"
+          },
+          "404": {
+            "description": "Not found"
+          },
+          "500": {
+            "description": "Internal server error"
+          }
+        },
+        "requestBody": {
+          "description": "Request body",
+          "required": true,
+          "content": {
+            "application/json": {
+              "schema": {
+                "type": "object"
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/Fat/v1/SalesCharge/{SellerId}/{Title}/{Order, Page, PageSize, Fields}": {
+      "delete": {
+        "tags": [
+          "salescharge"
+        ],
+        "summary": "No description available",
+        "description": "No description available",
+        "parameters": [
+          {
+            "name": "SellerId",
+            "in": "path",
+            "required": true,
+            "description": "SellerId parameter",
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "Title",
+            "in": "path",
+            "required": true,
+            "description": "Title parameter",
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "Order, Page, PageSize, Fields",
+            "in": "path",
+            "required": true,
+            "description": "Order, Page, PageSize, Fields parameter",
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "object"
+                }
+              }
+            }
+          },
+          "400": {
+            "description": "Bad request"
+          },
+          "401": {
+            "description": "Unauthorized"
+          },
+          "404": {
+            "description": "Not found"
+          },
+          "500": {
+            "description": "Internal server error"
+          }
+        }
+      },
+      "put": {
+        "tags": [
+          "salescharge"
+        ],
+        "summary": "No description available",
+        "description": "No description available",
+        "parameters": [
+          {
+            "name": "SellerId",
+            "in": "path",
+            "required": true,
+            "description": "SellerId parameter",
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "Title",
+            "in": "path",
+            "required": true,
+            "description": "Title parameter",
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "Order, Page, PageSize, Fields",
+            "in": "path",
+            "required": true,
+            "description": "Order, Page, PageSize, Fields parameter",
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "object"
+                }
+              }
+            }
+          },
+          "400": {
+            "description": "Bad request"
+          },
+          "401": {
+            "description": "Unauthorized"
+          },
+          "404": {
+            "description": "Not found"
+          },
+          "500": {
+            "description": "Internal server error"
+          }
+        },
+        "requestBody": {
+          "description": "Request body",
+          "required": true,
+          "content": {
+            "application/json": {
+              "schema": {
+                "type": "object"
+              }
+            }
+          }
+        }
+      }
+    },
+    "/Fat/SalesCharge/{Order,Page, PageSize, Fields}": {
+      "get": {
+        "tags": [
+          "salescharge"
+        ],
+        "summary": "No description available",
+        "description": "No description available",
+        "parameters": [
+          {
+            "name": "Order,Page, PageSize, Fields",
+            "in": "path",
+            "required": true,
+            "description": "Order,Page, PageSize, Fields parameter",
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "object"
+                }
+              }
+            }
+          },
+          "400": {
+            "description": "Bad request"
+          },
+          "401": {
+            "description": "Unauthorized"
+          },
+          "404": {
+            "description": "Not found"
+          },
+          "500": {
+            "description": "Internal server error"
+          }
+        }
+      }
+    },
+    "/api/Fat/v1/SalesCharge/{SellerId}/{Order, Page, PageSize, Fields}": {
+      "get": {
+        "tags": [
+          "salescharge"
+        ],
+        "summary": "No description available",
+        "description": "No description available",
+        "parameters": [
+          {
+            "name": "SellerId",
+            "in": "path",
+            "required": true,
+            "description": "SellerId parameter",
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "Order, Page, PageSize, Fields",
+            "in": "path",
+            "required": true,
+            "description": "Order, Page, PageSize, Fields parameter",
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "object"
+                }
+              }
+            }
+          },
+          "400": {
+            "description": "Bad request"
+          },
+          "401": {
+            "description": "Unauthorized"
+          },
+          "404": {
+            "description": "Not found"
+          },
+          "500": {
+            "description": "Internal server error"
+          }
+        }
+      }
+    },
+    "/api/Fat/v1/SalesCharge/{SellerId}/{Title}/{Order,Page, PageSize, Fields}": {
+      "get": {
+        "tags": [
+          "salescharge"
+        ],
+        "summary": "No description available",
+        "description": "No description available",
+        "parameters": [
+          {
+            "name": "SellerId",
+            "in": "path",
+            "required": true,
+            "description": "SellerId parameter",
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "Title",
+            "in": "path",
+            "required": true,
+            "description": "Title parameter",
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "Order,Page, PageSize, Fields",
+            "in": "path",
+            "required": true,
+            "description": "Order,Page, PageSize, Fields parameter",
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "object"
+                }
+              }
+            }
+          },
+          "400": {
+            "description": "Bad request"
+          },
+          "401": {
+            "description": "Unauthorized"
+          },
+          "404": {
+            "description": "Not found"
+          },
+          "500": {
+            "description": "Internal server error"
+          }
+        }
+      }
+    },
+    "/api/Fat/v1/SalesCharge/": {
+      "post": {
+        "tags": [
+          "salescharge"
+        ],
+        "summary": "No description available",
+        "description": "No description available",
+        "parameters": [],
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "object"
+                }
+              }
+            }
+          },
+          "400": {
+            "description": "Bad request"
+          },
+          "401": {
+            "description": "Unauthorized"
+          },
+          "404": {
+            "description": "Not found"
+          },
+          "500": {
+            "description": "Internal server error"
+          }
+        },
+        "requestBody": {
+          "description": "Request body",
+          "required": true,
+          "content": {
+            "application/json": {
+              "schema": {
+                "type": "object"
+              }
+            }
+          }
+        }
+      }
+    },
+    "/cards/cardInfo/{TpBlq}": {
+      "get": {
+        "tags": [
+          "modcard"
+        ],
+        "summary": "No description available",
+        "description": "No description available",
+        "parameters": [
+          {
+            "name": "TpBlq",
+            "in": "path",
+            "required": true,
+            "description": "TpBlq parameter",
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "object"
+                }
+              }
+            }
+          },
+          "400": {
+            "description": "Bad request"
+          },
+          "401": {
+            "description": "Unauthorized"
+          },
+          "404": {
+            "description": "Not found"
+          },
+          "500": {
+            "description": "Internal server error"
+          }
+        }
+      }
+    },
+    "/cards/fieldsInfo/": {
+      "get": {
+        "tags": [
+          "tmscard006"
+        ],
+        "summary": "No description available",
+        "description": "No description available",
+        "parameters": [],
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "object"
+                }
+              }
+            }
+          },
+          "400": {
+            "description": "Bad request"
+          },
+          "401": {
+            "description": "Unauthorized"
+          },
+          "404": {
+            "description": "Not found"
+          },
+          "500": {
+            "description": "Internal server error"
+          }
+        }
+      }
+    },
+    "/cards/headerItens/": {
+      "get": {
+        "tags": [
+          "tmscard006"
+        ],
+        "summary": "No description available",
+        "description": "No description available",
+        "parameters": [],
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "object"
+                }
+              }
+            }
+          },
+          "400": {
+            "description": "Bad request"
+          },
+          "401": {
+            "description": "Unauthorized"
+          },
+          "404": {
+            "description": "Not found"
+          },
+          "500": {
+            "description": "Internal server error"
+          }
+        }
+      }
+    },
+    "/cards/itemsDetails/{TpBlq}/{Order, Page, PageSize, Fields}": {
+      "post": {
+        "tags": [
+          "modcard"
+        ],
+        "summary": "No description available",
+        "description": "No description available",
+        "parameters": [
+          {
+            "name": "TpBlq",
+            "in": "path",
+            "required": true,
+            "description": "TpBlq parameter",
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "Order, Page, PageSize, Fields",
+            "in": "path",
+            "required": true,
+            "description": "Order, Page, PageSize, Fields parameter",
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "object"
+                }
+              }
+            }
+          },
+          "400": {
+            "description": "Bad request"
+          },
+          "401": {
+            "description": "Unauthorized"
+          },
+          "404": {
+            "description": "Not found"
+          },
+          "500": {
+            "description": "Internal server error"
+          }
+        },
+        "requestBody": {
+          "description": "Request body",
+          "required": true,
+          "content": {
+            "application/json": {
+              "schema": {
+                "type": "object"
+              }
+            }
+          }
+        }
+      }
+    },
+    "/charts/form/": {
+      "get": {
+        "tags": [
+          "tmschart008"
+        ],
+        "summary": "No description available",
+        "description": "No description available",
+        "parameters": [],
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "object"
+                }
+              }
+            }
+          },
+          "400": {
+            "description": "Bad request"
+          },
+          "401": {
+            "description": "Unauthorized"
+          },
+          "404": {
+            "description": "Not found"
+          },
+          "500": {
+            "description": "Internal server error"
+          }
+        }
+      }
+    },
+    "/charts/itemsDetails/{JsonFilter}": {
+      "post": {
+        "tags": [
+          "tmschart008"
+        ],
+        "summary": "No description available",
+        "description": "No description available",
+        "parameters": [
+          {
+            "name": "JsonFilter",
+            "in": "path",
+            "required": true,
+            "description": "JsonFilter parameter",
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "object"
+                }
+              }
+            }
+          },
+          "400": {
+            "description": "Bad request"
+          },
+          "401": {
+            "description": "Unauthorized"
+          },
+          "404": {
+            "description": "Not found"
+          },
+          "500": {
+            "description": "Internal server error"
+          }
+        },
+        "requestBody": {
+          "description": "Request body",
+          "required": true,
+          "content": {
+            "application/json": {
+              "schema": {
+                "type": "object"
+              }
+            }
+          }
+        }
+      }
+    },
+    "/charts/retdados/{JsonFilter}": {
+      "post": {
+        "tags": [
+          "tmschart008"
+        ],
+        "summary": "No description available",
+        "description": "No description available",
+        "parameters": [
+          {
+            "name": "JsonFilter",
+            "in": "path",
+            "required": true,
+            "description": "JsonFilter parameter",
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "object"
+                }
+              }
+            }
+          },
+          "400": {
+            "description": "Bad request"
+          },
+          "401": {
+            "description": "Unauthorized"
+          },
+          "404": {
+            "description": "Not found"
+          },
+          "500": {
+            "description": "Internal server error"
+          }
+        },
+        "requestBody": {
+          "description": "Request body",
+          "required": true,
+          "content": {
+            "application/json": {
+              "schema": {
+                "type": "object"
+              }
+            }
+          }
+        }
+      }
+    },
+    "/cards/cardInfo/": {
+      "get": {
+        "tags": [
+          "tmscard006"
+        ],
+        "summary": "No description available",
+        "description": "No description available",
+        "parameters": [],
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "object"
+                }
+              }
+            }
+          },
+          "400": {
+            "description": "Bad request"
+          },
+          "401": {
+            "description": "Unauthorized"
+          },
+          "404": {
+            "description": "Not found"
+          },
+          "500": {
+            "description": "Internal server error"
+          }
+        }
+      }
+    },
+    "/cards/itemsDetails/{Order, Page, PageSize, Fields}": {
+      "post": {
+        "tags": [
+          "tmscard006"
+        ],
+        "summary": "No description available",
+        "description": "No description available",
+        "parameters": [
+          {
+            "name": "Order, Page, PageSize, Fields",
+            "in": "path",
+            "required": true,
+            "description": "Order, Page, PageSize, Fields parameter",
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "object"
+                }
+              }
+            }
+          },
+          "400": {
+            "description": "Bad request"
+          },
+          "401": {
+            "description": "Unauthorized"
+          },
+          "404": {
+            "description": "Not found"
+          },
+          "500": {
+            "description": "Internal server error"
+          }
+        },
+        "requestBody": {
+          "description": "Request body",
+          "required": true,
+          "content": {
+            "application/json": {
+              "schema": {
+                "type": "object"
+              }
+            }
+          }
+        }
+      }
+    },
+    "/charts/filterItens/": {
+      "get": {
+        "tags": [
+          "comd040"
+        ],
+        "summary": "No description available",
+        "description": "No description available",
+        "parameters": [],
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "object"
+                }
+              }
+            }
+          },
+          "400": {
+            "description": "Bad request"
+          },
+          "401": {
+            "description": "Unauthorized"
+          },
+          "404": {
+            "description": "Not found"
+          },
+          "500": {
+            "description": "Internal server error"
+          }
+        }
+      }
+    },
+    "/cards/cardFilter/": {
+      "get": {
+        "tags": [
+          "tmscard006"
+        ],
+        "summary": "No description available",
+        "description": "No description available",
+        "parameters": [],
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "object"
+                }
+              }
+            }
+          },
+          "400": {
+            "description": "Bad request"
+          },
+          "401": {
+            "description": "Unauthorized"
+          },
+          "404": {
+            "description": "Not found"
+          },
+          "500": {
+            "description": "Internal server error"
+          }
+        }
+      }
+    },
+    "/v1/ProductionReport/": {
+      "post": {
+        "tags": [
+          "ubaw150"
+        ],
+        "summary": "No description available",
+        "description": "No description available",
+        "parameters": [],
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "object"
+                }
+              }
+            }
+          },
+          "400": {
+            "description": "Bad request"
+          },
+          "401": {
+            "description": "Unauthorized"
+          },
+          "404": {
+            "description": "Not found"
+          },
+          "500": {
+            "description": "Internal server error"
+          }
+        },
+        "requestBody": {
+          "description": "Request body",
+          "required": true,
+          "content": {
+            "application/json": {
+              "schema": {
+                "type": "object"
+              }
+            }
+          }
+        }
+      }
+    },
+    "/v1/ProductionReversal/": {
+      "post": {
+        "tags": [
+          "ubaw150"
+        ],
+        "summary": "No description available",
+        "description": "No description available",
+        "parameters": [],
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "object"
+                }
+              }
+            }
+          },
+          "400": {
+            "description": "Bad request"
+          },
+          "401": {
+            "description": "Unauthorized"
+          },
+          "404": {
+            "description": "Not found"
+          },
+          "500": {
+            "description": "Internal server error"
+          }
+        },
+        "requestBody": {
+          "description": "Request body",
+          "required": true,
+          "content": {
+            "application/json": {
+              "schema": {
+                "type": "object"
+              }
+            }
+          }
+        }
+      }
+    },
+    "/v1/": {
+      "post": {
+        "tags": [
+          "wstssauth"
+        ],
+        "summary": "No description available",
+        "description": "No description available",
+        "parameters": [],
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "object"
+                }
+              }
+            }
+          },
+          "400": {
+            "description": "Bad request"
+          },
+          "401": {
+            "description": "Unauthorized"
+          },
+          "404": {
+            "description": "Not found"
+          },
+          "500": {
+            "description": "Internal server error"
+          }
+        },
+        "requestBody": {
+          "description": "Request body",
+          "required": true,
+          "content": {
+            "application/json": {
+              "schema": {
+                "type": "object"
+              }
+            }
+          }
+        }
+      }
+    }
+  },
+  "components": {
+    "schemas": {},
+    "parameters": {
+      "version": {
+        "name": "version",
+        "in": "path",
+        "required": true,
+        "schema": {
+          "type": "string"
+        },
+        "description": "API version"
+      }
+    }
+  }
+}
